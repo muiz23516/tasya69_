@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Card - Saidatul Emyra Tasya Binti Nazri</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('t4.jpg'); /* Path to your background image */
+            background-size: cover; /* Make the background cover the entire page */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Do not repeat the background image */
+            color: #333;
+            text-align: center;
+            padding: 50px;
+            overflow-x: hidden;
+        }
+        .birthday-container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: auto;
+            max-width: 600px;
+            display: block; /* Show the content by default */
+        }
+        .password-container {
+            display: none; /* Hide the password container */
+        }
+        h1 {
+            color: #ff6347;
+        }
+        p {
+            font-size: 18px;
+        }
+        .cake-image {
+            max-width: 80%;
+            height: auto;
+            margin-top: 5px;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #666;
+        }
+        .play-button, .password-button, .message-button {
+            background-color: #ff6347;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        input[type="password"] {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: 10px;
+        }
+
+        /* Confetti Styles */
+        .confetti {
+            position: fixed;
+            top: 0;
+            left: 50%;
+            width: 15px;
+            height: 15px;
+            background-color: #ff6347;
+            z-index: 9999;
+            pointer-events: none;
+            opacity: 0;
+            animation: confetti-fall linear forwards;
+        }
+
+        @keyframes confetti-fall {
+            0% {
+                transform: translateX(-50%) translateY(-50vh) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateX(calc(-50% + 200px)) translateY(100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none; 
+            position: fixed; 
+            z-index: 10000; 
+            left: 0; 
+            top: 0; 
+            width: 100%; 
+            height: 100%; 
+            overflow: auto; 
+            background-color: rgba(0, 0, 0, 0.4); 
+        }
+        .modal-content {
+            background-color: #fff;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Password Container Removed -->
+
+    <div class="birthday-container" id="birthday-container">
+        <h1>Happy Birthday, Saidatul Emyra Tasya Binti Nazri!</h1>
+        <p>Today, 6 September 2024, is a special day as we celebrate your birthday! I wish you immense happiness, good health, and success in all your endeavors. May this year bring you closer to your dreams and be filled with joy and growth. May Allah's blessings guide and support you throughout the year. Here’s to a year of achieving your goals and enjoying every moment. Amiin Insha'Allah!</p>
+
+        <img src="t1.jpg" alt="Birthday Cake" class="cake-image">
+
+        <button class="play-button" onclick="startCelebration()">Start Celebration</button> <br>
+        <button class="message-button" onclick="showMessage()">Read Your Birthday Message</button>
+
+        <div class="footer">
+            <p>&copy; 2024 Tasya Birthday Wishes | by Raqib </p>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="messageModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Birthday Message</h2>
+            <p>Teruntuk Tasya,</p>
+            <p>Selamat Hari Kelahiran KTKKKKK (Saidatul Emyra Tasya Binti Nazri). Bertambah giksigek taun utk ktk hihi, tapi ktk makin ari makin kacakk, imut gemoyyyyy. Mok padah juak tokk, kdak marek jak rasa kita jadi klasmet yang sik ambik tauk gilak sama dikpun but who knows Allah takdirkan and nya pun plan lebih bait utkk kita hihi.</p>
+            <p>Dari kawan biasa biasa jak sebelum tok kinek kita dh boleh serapat tok, our perjalanan nang sik terpike bah boleh sampe kdak kinekk tokk. Walaupun sebelum tok kita masing-masing ada life dikpun, but somehow kinek kita boleh jadi serapat tokk. KTK TAUK BETAPA HAPPYNYA KMK BILA TIME KITA FIRST2 JOGGING SAMA YAAA. yalah benda kmk mok gilak polah sama sama ngan ktk, kmk dh plan awal sebenarnya mok padah ngan ktk mok mbak jogging, eh tauk tauk ktk mok pulak Waktu yaa. Hanya Allah dan Azizi jak tauk betapa gembira nya kmk Waktu yaaa AHAHHAHAHA.</p>
+            <p>Kinek ktk dah 21 tahun dh tuak dh, walaupun lambat dr kmk. kmk yg dolok. but kmk bangga dengan apa apa achievements yang ktk dh polah and any of ur goals that sayangg mok achieve soon. TAHNIAH ATAS 4 FLATT NYAAA, NANG PANDEEE NYA TOK EHH. I see u as a hardworking person, mun lah umi ktk dpt nangga ktk pun kejayaan kinekk she would definitely be so PROUD of you! Semoga umi ktk sentiasa dilindungi oleh Allah and jangan pernah lupa untuk mendoakannya okay sayangg.</p>
+            <p>Kmk tau sepanjang kmk ngan ktk, kmk ada polah salah yang kmk kadang sik sedar sik pasan sik peka. but deep in my heart, kmk sik penah langsung terdetik utk kecikkan hati ktkk. Sbb kita masih in proses utk mengenali baik buruk masing2 kekurangan kelebihan semua yaa. but i hope kmk doakan semoga rasa ktk ke kmk and kmk ke ktk sikkan lunturr utk kedepannya. Jangan penah berhenti utk terus mendoakan diri kita okay, dgn doa jak TAKDIR ya dpt diubah, Insha'Allah.</p>
+            <p>Bagi kmk, kmk sangat bersyukur ktk dpt terima kmk last last minit AHAHAHAH. Walaupun banyak dugaan yg kmk hadapi sebelum2 yaa tpi kmk anggap benda ya as a ujian ke kmk. Kmk sykur juak my family dpt terima kehadiran ktk walaupun cuma usu and cik kmk jak yg penah nangga ktk depan2 and usu kmk jak ktk penah salam AHAHHAHA. Klak ada rezeki, kmk mok mbak ktk met my parents also okay, they would be love to see you in person.</p>
+            <p>Last sekali dari kmk, semoga tahun tok tahun yang penuh dengan kegembiraan, kejayaan dan kasih sayang bagi ktk. Kmk doakan semoga semua hajat ktk tercapai dan semoga hubungan kita semakin hari semakin kuat. Kita kan mok kawen jadi, jangan putus asa, and usaha dan doa yang baik baik jak okay. Minta maaf sbb sikpat mok celebrate ur birthday depan depann ktk, it was part of my plan before when i went to Kuching haritu. but somehow i got JPJ test ya pulak utk settlekan so kmk terpaksa balik cepat. we celebrate soon bila ada rezeki kita jmpa yaa okayyy loveee.</p>
+            <p>p/s: ada rezeki kita jumpa lagi okay.ily </p>
+            <p>With love,</p>
+            <p>Your 夫.</p>
+        </div>
+    </div>
+
+    <!-- Confetti and Sound Script -->
+    <script>
+        function createConfetti() {
+            const confettiCount = 10; // Generate fewer confetti at a time for a continuous effect
+            for (let i = 0; i < confettiCount; i++) {
+                const confetti = document.createElement('div');
+                confetti.classList.add('confetti');
+                document.body.appendChild(confetti);
+
+                const size = Math.random() * 10 + 5;
+                confetti.style.width = `${size}px`;
+                confetti.style.height = `${size}px`;
+                confetti.style.left = `${Math.random() * 100}vw`;
+                confetti.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+                confetti.style.animationDuration = `${Math.random() * 3 + 2}s`;
+                confetti.style.animationDelay = `${Math.random() * 2}s`;
+
+                confetti.style.top = `${-50 - Math.random() * 50}vh`; // Starting above the viewport
+
+                // Remove the confetti after it falls
+                confetti.addEventListener('animationend', () => {
+                    confetti.remove();
+                });
+            }
+        }
+
+        function playSound() {
+            const sound = new Audio('s1.mp3');
+            sound.play();
+        }
+
+        function startCelebration() {
+            playSound();
+            setInterval(createConfetti, 500); // Create confetti every 500 milliseconds
+        }
+
+        function showMessage() {
+            document.getElementById('messageModal').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('messageModal').style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById('messageModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+</html>
